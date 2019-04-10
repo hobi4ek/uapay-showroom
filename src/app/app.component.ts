@@ -7,4 +7,17 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
 	title = 'uapay-showroom';
+	act1 = '';
+
+	appState = {};
+
+
+
+
+	constructor() {}
+
+	resetSystem(name) {
+
+		name ? this.appState[name] = {} : this.appState = {};
+	}
 }
